@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI HUB</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="space-y-10">
+        <h1 class="text-[45px] font-bold text-[#111111] text-center">AI Universe Hub</h1>
+        <div class="text-center">
+            <button onclick="sortByDate()"
+                class="btn text-white text-[20px] font-semibold bg-[#EB5757] text-center border-none items-center hover:bg-orange-600">Sort
+                By
+                Date</button>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div id="selected-Container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-6 gap-8">
+            </div>
+            <div id="show-all-div" class="text-center hidden">
+                <button onclick="seeAll()"
+                    class="btn text-white text-[20px] font-semibold bg-[#EB5757] text-center border-none items-center hover:bg-orange-600">
+                    See More
+                </button>
+            </div>
+            </div>
+        </section>
+    </main>
+    <div id="modal content">
+        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box">
+                <h3 class="font-bold text-lg">Hello!</h3>
+                <p class="py-4">Press ESC key or click the button below to close</p>
+                <div class="modal-action">
+                    <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
